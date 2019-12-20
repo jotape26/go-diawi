@@ -18,7 +18,7 @@ Simply replace the diawi 'token' variable with your token string and replace the
 package main
 
 import (
-  gd "github.com/sirkaiserkai/go-diawi"
+  gd "github.com/jotape26/go-diawi"
   "log"
 )
 
