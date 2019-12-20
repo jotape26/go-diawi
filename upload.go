@@ -17,7 +17,7 @@ type UploadRequest struct {
 	Password                string
 	Comment                 string
 	CallbackUrl             string
-	CallbackEmails          []string
+	CallbackEmails          string
 
 	ds diawi
 }
@@ -62,7 +62,7 @@ func (upRequest *UploadRequest) Upload() (*UploadResponse, error) {
 		formWriter.AddField(callbackURLFieldName, upRequest.CallbackUrl)
 	}
 
-	if len(upRequest.CallbackEmails) != 0 {
+	if upRequest.CallbackEmails != "" {
 		formWriter.AddField(callbackEmailsFieldName, upRequest.CallbackEmails)
 	}
 
