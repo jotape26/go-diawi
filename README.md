@@ -2,10 +2,13 @@
 
 Package written in go to interface with [diawi](https://www.diawi.com/)'s API
 
+## Disclaimer
+This repo was forked and modified to be used in the company I'm working. If you use Diawi and feel the changes I've made here work for you, go ahead and use it. If not, I strongly advise you to fork [sirkaiserkai/go-diawi](https://github.com/sirkaiserkai/go-diawi) and make your changes.
+
 ## Install
 
 ```sh
-go get github.com/sirkaiserkai/go-diawi
+go get github.com/jotape26/go-diawi
 ```
 
 ## Example
